@@ -3,15 +3,18 @@ package ex;
 public class TestCircle {
 
 	public static void main(String[] args) {
-	Circle c1= new Circle();
+		
+	Circle c4= new Circle();
+	c4.setRadius(5.5);
+	System.out.println("radius is:" + c4.getRadius());
 	
-	System.out.println("The circle has radius of"
-			+c1.getRadius()+ "and are of" + c1.getArea());
+	c4.setColor("green");
+	System.out.println("color is:" + c4.getColor());
 	
-	Circle c2= new Circle(2.0); //r=2.0
-
-	System.out.println("The circle has radius of"
-			+c2.getRadius() + "and area of" + c2.getArea());
+	Circle c6= new Circle();
+	System.out.println("radius is:" + c6.getRadius()); // return default value
+	System.out.println("color is:" + c6.getColor()); // return default value
+	
 
 	}
 
